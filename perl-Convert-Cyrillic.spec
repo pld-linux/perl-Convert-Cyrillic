@@ -1,4 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	Convert
+%define		pnam	Cyrillic
 Summary:	Convert::Cyrillic perl module
 Name:		perl-Convert-Cyrillic
 Version:	1.03
@@ -7,8 +9,8 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Convert/cyrillic-%{version}.tar.gz
 # Source0-md5:	d54ca5e24d2a7913862a8ce534f7ae74
-BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,13 +27,14 @@ to multiple charsets.
 %setup -q -n cyrillic-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
@@ -39,12 +42,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/Convert/Cyrillic.pm
-%{perl_sitelib}/Convert/Cyrillic/Utils.pm
-%{perl_sitelib}/Lingua/DetectCharset.pm
-%{perl_sitelib}/Lingua/DetectCharset/StatKoi.pm
-%{perl_sitelib}/Lingua/DetectCharset/StatKoi8r.pm
-%{perl_sitelib}/Lingua/DetectCharset/StatKoi8u.pm
-%{perl_sitelib}/Lingua/DetectCharset/StatWin.pm
-%{perl_sitelib}/Lingua/DetectCharset/StatUtf8.pm
+%{perl_vendorlib}/Convert/Cyrillic.pm
+%{perl_vendorlib}/Convert/Cyrillic/Utils.pm
+%{perl_vendorlib}/Lingua/DetectCharset.pm
+%{perl_vendorlib}/Lingua/DetectCharset/StatKoi.pm
+%{perl_vendorlib}/Lingua/DetectCharset/StatKoi8r.pm
+%{perl_vendorlib}/Lingua/DetectCharset/StatKoi8u.pm
+%{perl_vendorlib}/Lingua/DetectCharset/StatWin.pm
+%{perl_vendorlib}/Lingua/DetectCharset/StatUtf8.pm
 %{_mandir}/man3/*
