@@ -7,7 +7,8 @@ Version:	1.03
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Convert/cyrillic-%{version}.tar.gz
+#Source0:	http://www.cpan.org/modules/by-module/Convert/cyrillic-%{version}.tar.gz
+Source0:	cyrillic-%{version}.tar.gz
 # Source0-md5:	d54ca5e24d2a7913862a8ce534f7ae74
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
