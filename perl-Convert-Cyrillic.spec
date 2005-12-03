@@ -1,7 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Convert
 %define		pnam	Cyrillic
-Summary:	Convert::Cyrillic perl module
+Summary:	Convert::Cyrillic Perl module
+Summary(pl):	Modu³ Perla Convert::Cyrillic
 Name:		perl-Convert-Cyrillic
 Version:	1.03
 Release:	1
@@ -24,6 +25,15 @@ texts.
 This suite is intended for webmasters solving various issues related
 to multiple charsets.
 
+%description -l pl
+Wszystkie rosyjskie strony WWW musz± udostêpniaæ ró¿ne kodowania
+rosyjskich tekstów. Cztery g³ówne kodowania to CP1251 dla Windows,
+KOI8 dla Uniksa, MAC dla Macintosha i transliteracja dla u¿ytkowników
+akceptuj±cych jedynie angielskie teksty.
+
+Ten modu³ ma pomagaæ webmasterom w rozwi±zywaniu problemów zwi±zanych
+z wieloma zestawami znaków.
+
 %prep
 %setup -q -n cyrillic-%{version}
 
@@ -44,8 +54,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{perl_vendorlib}/Convert/Cyrillic.pm
+%dir %{perl_vendorlib}/Convert/Cyrillic
 %{perl_vendorlib}/Convert/Cyrillic/Utils.pm
 %{perl_vendorlib}/Lingua/DetectCharset.pm
+%dir %{perl_vendorlib}/Lingua/DetectCharset
 %{perl_vendorlib}/Lingua/DetectCharset/StatKoi.pm
 %{perl_vendorlib}/Lingua/DetectCharset/StatKoi8r.pm
 %{perl_vendorlib}/Lingua/DetectCharset/StatKoi8u.pm
