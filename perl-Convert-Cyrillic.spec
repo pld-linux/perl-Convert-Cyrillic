@@ -2,7 +2,7 @@
 %define		pdir	Convert
 %define		pnam	Cyrillic
 Summary:	Convert::Cyrillic Perl module
-Summary(pl):	Modu³ Perla Convert::Cyrillic
+Summary(pl.UTF-8):   ModuÅ‚ Perla Convert::Cyrillic
 Name:		perl-Convert-Cyrillic
 Version:	1.03
 Release:	1
@@ -25,14 +25,14 @@ texts.
 This suite is intended for webmasters solving various issues related
 to multiple charsets.
 
-%description -l pl
-Wszystkie rosyjskie strony WWW musz± udostêpniaæ ró¿ne kodowania
-rosyjskich tekstów. Cztery g³ówne kodowania to CP1251 dla Windows,
-KOI8 dla Uniksa, MAC dla Macintosha i transliteracja dla u¿ytkowników
-akceptuj±cych jedynie angielskie teksty.
+%description -l pl.UTF-8
+Wszystkie rosyjskie strony WWW muszÄ… udostÄ™pniaÄ‡ rÃ³Å¼ne kodowania
+rosyjskich tekstÃ³w. Cztery gÅ‚Ã³wne kodowania to CP1251 dla Windows,
+KOI8 dla Uniksa, MAC dla Macintosha i transliteracja dla uÅ¼ytkownikÃ³w
+akceptujÄ…cych jedynie angielskie teksty.
 
-Ten modu³ ma pomagaæ webmasterom w rozwi±zywaniu problemów zwi±zanych
-z wieloma zestawami znaków.
+Ten moduÅ‚ ma pomagaÄ‡ webmasterom w rozwiÄ…zywaniu problemÃ³w zwiÄ…zanych
+z wieloma zestawami znakÃ³w.
 
 %prep
 %setup -q -n cyrillic-%{version}
