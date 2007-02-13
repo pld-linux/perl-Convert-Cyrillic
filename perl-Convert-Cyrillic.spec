@@ -2,7 +2,7 @@
 %define		pdir	Convert
 %define		pnam	Cyrillic
 Summary:	Convert::Cyrillic Perl module
-Summary(pl.UTF-8):   Moduł Perla Convert::Cyrillic
+Summary(pl.UTF-8):	Moduł Perla Convert::Cyrillic
 Name:		perl-Convert-Cyrillic
 Version:	1.03
 Release:	1
