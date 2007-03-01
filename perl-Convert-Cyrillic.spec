@@ -48,6 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+rm $RPM_BUILD_ROOT%{perl_vendorarch}/auto/cyrillic-suite/.packlist
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
