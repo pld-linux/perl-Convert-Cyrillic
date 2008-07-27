@@ -5,7 +5,7 @@ Summary:	Convert::Cyrillic Perl module
 Summary(pl.UTF-8):	Moduł Perla Convert::Cyrillic
 Name:		perl-Convert-Cyrillic
 Version:	1.03
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 #Source0:	http://www.cpan.org/modules/by-module/Convert/cyrillic-%{version}.tar.gz
