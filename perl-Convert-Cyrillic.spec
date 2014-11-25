@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Convert
 %define		pnam	Cyrillic
+%include	/usr/lib/rpm/macros.perl
 Summary:	Convert::Cyrillic Perl module
 Summary(pl.UTF-8):	Moduł Perla Convert::Cyrillic
 Name:		perl-Convert-Cyrillic
@@ -11,6 +11,7 @@ Group:		Development/Languages/Perl
 #Source0:	http://www.cpan.org/modules/by-module/Convert/cyrillic-%{version}.tar.gz
 Source0:	cyrillic-%{version}.tar.gz
 # Source0-md5:	d54ca5e24d2a7913862a8ce534f7ae74
+URL:		http://search.cpan.org/dist/Convert-Cyrillic/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
