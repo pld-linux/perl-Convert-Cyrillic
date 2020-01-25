@@ -1,6 +1,5 @@
 %define		pdir	Convert
 %define		pnam	Cyrillic
-%include	/usr/lib/rpm/macros.perl
 Summary:	Convert::Cyrillic Perl module
 Summary(pl.UTF-8):	Moduł Perla Convert::Cyrillic
 Name:		perl-Convert-Cyrillic
